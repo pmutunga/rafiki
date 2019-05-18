@@ -19,3 +19,9 @@ Use HTML, CSS, and JavaScript to create a web page clone of the Initab Chrome Ex
 
 - HTML/CSS layout
 - Using JavaScript to manipulate the DOM and event system
+
+## Learning Guides
+
+- CSS Tricks article: [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+* WS3Schools. [CSS Grid layout module](https://www.w3schools.com/css/css_grid.asp)
