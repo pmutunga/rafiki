@@ -5,6 +5,6 @@ $(document).ready(function() {
   setInterval(function(startTime) {
     $('#time-now').html(moment().format('h:mm'));
     $('#ampm').html(moment().format('a'));
-    $('#current-date').html(moment().format('MMMM Do YYYY'));
+    $('#current-date').html(moment().format('MMMM DD, YYYY'));
   }, 1000);
 });
