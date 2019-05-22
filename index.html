@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-CA">
+<html>
   <head>
     <meta charset="UTF-8" />
     <!--what does this do?-->
@@ -19,78 +19,111 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
     <!--this is the link to the css file-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--viewport gives browser instructions on how to control page dimensions-->
+
+      <!-- Moment.js Reference -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    
   </head>
-
   <body>
-    <div class="grid-container">
-      <div class="grid-item item-1-left-top">
-        <ul class="rnav">
-          <li>
-            <a class="rnavitem" href="default.asp"><span><i class="fas fa-wrench"></i></span></i> <span>SETTINGS</span></a>
-          </li>
-          <li>
-            <a href="news.asp"><i class="fas fa-code"></i>GISTS</a>
-          </li>
-          <li>
-            <a href="contact.asp"
-              ><i class="fab fa-stack-overflow"></i> STACK OVERFLOW</a
-            >
-          </li>
-          <li>
-            <a href="about.asp"><i class="fas fa-chart-line"></i>TRENDING</a>
-          </li>
-          <li>
-            <a href="about.asp"><i class="fas fa-edit"></i>SCRATCH PAD</a>
-          </li>
-          <li>
-            <a href="about.asp"><i class="fas fa-question"></i>HELP</a>
-          </li>
-        </ul>
-        <!-- <div class="btn-group-vertical">
-          <button type="button" class="btn btn-secondary">
-            <i class="fas fa-wrench"></i> SETTINGS
-          </button>
-
-          <button type="button" class="btn btn-secondary">
-            <i class="fas fa-code"></i>GISTS
-          </button>
-
-          <button type="button" class="btn btn-secondary">
-            <i class="fab fa-stack-overflow"></i> STACK OVERFLOW
-          </button>
-
-          <button type="button" class="btn btn-secondary">
-            <i class="fas fa-chart-line"></i>TRENDING
-          </button>
-
-          <button type="button" class="btn btn-secondary">
-            <i class="fas fa-edit"></i>SCRATCH PAD
-          </button>
-
-          <button type="button" class="btn btn-secondary">
-            <i class="far fa-lightbulb"></i>PLAYGROUND
-            <i class="far fa-lock"></i>
-          </button>
-
-          <button type="button" class="btn btn-secondary">
-            <i class="fas fa-question"></i>HELP
-          </button> -->
-        <!-- </div> -->
+    <div class="sidenav">
+      <a id="settings" href="#about"><button id="settings-btn" class="sidenav-btn"><i class="fas fa-wrench settings"></i></button></i> SETTINGS</a>
+      <a id="gists" href="#services"><button id="gists-btn" class="sidenav-btn"><i class="fas fa-code"></i></button> GISTS</a>
+      <a id="stack" href="#clients"><button id="stack-btn" class="sidenav-btn"><i class="fab fa-stack-overflow"></i> </button> STACK OVERFLOW</a>
+      <a id="trending" href="#contact"><button id="trending-btn" class="sidenav-btn"><i class="fas fa-chart-line"></i> </button> TRENDING</a>
+      <a id="scratch" href="about.asp"><button id="scratch-btn" class="sidenav-btn"><i class="fas fa-pen-square"></i></button> SCRATCH PAD</a>
+      <a id="play" href="about.asp"><button class="sidenav-btn"><i class="far fa-lightbulb"></i></button> PLAYGROUND <i class="fas fa-lock"></i></a>
+      <a id="question" href="about.asp"><button id="question-btn" class="sidenav-btn"><i class="fas fa-question"></i></button> HELP</a>
+      <img id="initab-logo" src="assets/images/initab_logo_white.png" alt="initab logo">
+      <div class="btn-group" id="sidenav-social" role="group" aria-label="social">
+            <button class="social sidenav-btn" id="facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="social sidenav-btn" id="linkedin"><i class="fab fa-linkedin-in"></i></button>
+            <button class="social sidenav-btn" id="twitter"><i class="fab fa-twitter"></i></button>
+            <button class="social sidenav-btn" id="discord"><i class="fab fa-discord"></i></button>
       </div>
-      <div class="grid-item item-2-left-bot">item-2-left-bot</div>
-      <div class="grid-item item-3-mid-left-head">item-3-mid-left-head</div>
-      <div class="grid-item item-4-mid-left-body">item-4-mid-left-body</div>
-      <div class="grid-item item-5-mid-top-head">item-5-mid-top-head</div>
-      <div class="grid-item item-6-mid-top-body">item-6-mid-top-body</div>
-      <div class="grid-item item-7-mid-mid">item-7-mid-mid</div>
-      <div class="grid-item item-8-mid-bot">item-8-mid-bot</div>
-      <div class="grid-item item-9-right-top-head">item-9-right-top-head</div>
-      <div class="grid-item item-10-right-mid">item-10-right-mid</div>
-      <div class="grid-item item-11-mid-bot">item-11-mid-bot</div>
+
     </div>
+
+    <div class="main">
+     <div class="row">
+         <div class="col-sm-3 left-col">
+                <h4><i class="fab fa-reddit-alien"></i> POPULAR ON R/JAVASCRIPT</h4>
+             <ul class="feed">
+                 <li class="feed-item left-ad">
+                        <h5>Bring your team together with Slack, the collaboration hub for work.</h5>
+                        <h6>Learn More</h6> 
+                         <a href="#" class="sponsored">Sponsored by Slack</a>
+                 </li>
+                 <li class="feed-item left-feed">
+                        <h5>WebGL Fluid Simulation</h5> 
+                        <h6><span class="posted-by">Posted by:</span> <span class="reddit-user">u/magenta_placenta</span> 
+                        <span class=reddit-score>Reddit Score: 528</span></h6>
+                        <a class="sponsored" href="#" class="sponsored">Link to Comments</a>
+                 </li>
+                 <li class="feed-item left-feed">
+                       <h5>Test Automation Analytics using Cube.js</h5> 
+                       <h6><span class="posted-by">Posted by:</span><span class="reddit-user">u/ekbduffy </span>
+                        <span class=reddit-score>Reddit Score: 17</span></h6>  
+                       <a href="#" class="sponsored">Link to Comments</a> 
+                 </li>
+                 <li class="feed-item left-feed">
+                        <h5>Hiding secrets in a pure front-end app</h5> 
+                        <h6><span class="posted-by">Posted by:</span><span class="reddit-user">u/ddeenniiss90 </span><span class="reddit-score">Reddit Score: 4
+                  </li>
+                  <li class="feed-item left-feed">
+                        <h5>TFetch vs Axios.js for making HTTP requests</h5> 
+                        <h6><span class="posted-by">Posted by:</span><span class="reddit-user">u/ekbduffy </span>
+                         <span class=reddit-score>Reddit Score: 17</span></h6>  
+                        <a href="#" class="sponsored">Link to Comments</a> 
+                  </li>
+             </ul>
+         </div>
+         <div class="col">
+             <h4> <i class="far fa-clock"></i> RELEVANT JAVASCRIPT HISTORY</h4>
+             <section id="mid-feed">
+                <ul class="feed">
+                        <li class="sc-kIPQKe hWKhfd"><img src="https://www.google.com/s2/favicons?domain=https://jobs.rbc.com/ca/en/job/RBCAA008890632/Full-Stack-JavaScript-Developer"><a class="mid-feed" href="https://www.codecademy.com/en/forum_questions/518949bb96913300dd000fc3">Linking Your HTML and JavaScript Files | Codecademy</a><span class="mid-feed-date"><time datetime="1558383819044">a day ago</time></span></li>
+                        <li class="sc-kIPQKe hWKhfd"><img class="themeBorder8 sc-eXEjpC djTjKz" src="https://www.google.com/s2/favicons?domain=https://firebase.google.com/docs/web/setup?authuser=0"><a class="mid-feed" href="https://firebase.google.com/docs/web/setup?authuser=0">Add Firebase to your JavaScript project &nbsp;|&nbsp; Firebase</a><span class="mid-feed-date"><time datetime="1556052151891">2 days ago</time></span></li>
+                        <li class="sc-kIPQKe hWKhfd"><img class="themeBorder8 sc-eXEjpC djTjKz" src="https://www.google.com/s2/favicons?domain=https://firebase.google.com/docs/web/setup?authuser=0"><a class="mid-feed" href="https://firebase.google.com/docs/web/setup?authuser=0">Add Firebase to your JavaScript project &nbsp;|&nbsp; Firebase</a><span class="mid-feed-date"><time datetime="1556052151891">3 days ago</time></span></li>
+                        <li class="sc-kIPQKe hWKhfd"><img class="themeBorder8 sc-eXEjpC djTjKz" src="https://www.google.com/s2/favicons?domain=https://www.w3schools.com/jsref/jsref_splice.asp"><a class="mid-feed" href="https://firebase.google.com/docs/web/setup?authuser=0">Add Firebase to your JavaScript project &nbsp;|&nbsp; Firebase</a><span class="mid-feed-date"><time datetime="1556052151891">a month ago</time></span></li>
+                        <li class="sc-kIPQKe hWKhfd"><img class="themeBorder8 sc-eXEjpC djTjKz" src="https://www.google.com/s2/favicons?domain=https://firebase.google.com/docs/web/setup?authuser=0"><a class="mid-feed" href="https://firebase.google.com/docs/web/setup?authuser=0">Add Firebase to your JavaScript project &nbsp;|&nbsp; Firebase</a><span class="mid-feed-date"><time datetime="1556052151891">a month ago</time></span></li>
+                        <li class="sc-kIPQKe hWKhfd"><img class="themeBorder8 sc-eXEjpC djTjKz" src="https://www.google.com/s2/favicons?domain=https://firebase.google.com/docs/web/setup?authuser=0"><a class="mid-feed" href="https://firebase.google.com/docs/web/setup?authuser=0">Add Firebase to your JavaScript project &nbsp;|&nbsp; Firebase</a><span class="mid-feed-date"><time datetime="1556052151891">two months ago</time></span></li>
+                        <li class="sc-kIPQKe hWKhfd"><img src="https://www.google.com/s2/favicons?domain=https://github.com/firebase/firebaseui-web#configuration"><a class="mid-feed" href="https://firebase.google.com/docs/web/setup?authuser=0">Add Firebase to your JavaScript project &nbsp;|&nbsp; Firebase</a><span class="mid-feed-date"><time datetime="1556052151891">three months ago</time></span></li>
+
+                        
+                </ul>
+             </section>
+             <section id="time">
+                    <h2><span id="time-now"></span><span id="ampm"></span></h2> 
+                    <h5 id="current-date"></h5>
+                </section>
+                <section id="custom"> 
+    
+                </section>
+         </div>
+
+
+         <div class="col-sm-3">
+             <h4><i class="fab fa-github-alt"></i> GITHUB ISSUES HISTORY</h4>
+             <section id="github-hist">
+
+             </section>
+             <section id="bottom-ad">
+
+             </section>
+
+         </div>
+     </div>
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script> -->
+    <script src="assets/scripts/home.js"></script>
   </body>
 </html>

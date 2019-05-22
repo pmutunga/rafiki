@@ -25,3 +25,11 @@ Use HTML, CSS, and JavaScript to create a web page clone of the Initab Chrome Ex
 - CSS Tricks article: [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 * WS3Schools. [CSS Grid layout module](https://www.w3schools.com/css/css_grid.asp)
+
+* John O. Paul's article on React Masonry layout [How to create a masonry layout component using React.](https://medium.com/the-andela-way/how-to-create-a-masonry-layout-component-using-react-f30ec9ca5e99)
+
+* [React Tutorial](http://tszekely.github.io/react-learning-module/step-02)
+
+* [bootstrap sidebar](https://bootstrapious.com/p/bootstrap-sidebar)
+
+* [Theme colors](https://github.com/dracula/dracula-theme)
