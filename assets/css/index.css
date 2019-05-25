@@ -188,16 +188,28 @@ h6 {
   display: block;
   opacity: 1;
   margin-bottom: 30px;
+  /* overflow-y: scroll; */
+  overflow: hidden; /* Hide horizontal scrollbar */
+  direction: ltr;
+  height: 135px;
+  text-align: left;
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 10px;
+  border-color: #44475a;
 }
 
-.sponsored {
+.content-para {
   font-family: 'Inconsolata', monospace;
   font-size: 14px;
   line-height: 18px;
   font-weight: 100;
+}
+
+.sponsored {
   border-radius: 3px;
   color: #ff79c6;
-  margin-top: 0px;
+  margin: 0;
 }
 
 .posted-by {
@@ -206,10 +218,13 @@ h6 {
 
 .reddit-user {
   color: #f1fa8c;
+  margin: 0;
 }
 
 .reddit-score {
   color: #3c5a99;
+  margin: 0;
+  font-size: 14px;
 }
 
 .mid-feed {
@@ -221,7 +236,7 @@ h6 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #3c5a99;
+  color: #6272a4;
 }
 
 .mid-feed-image {
@@ -247,10 +262,38 @@ h6 {
   color: #999999;
 }
 
-.mid-feed-wrapper {
-  height: 600px;
+#midfeed-wrapper {
   overflow: hidden;
   overflow-y: scroll;
+  /* overflow-y: scroll; */
+  /* border: #8be9fd soild 2px; */
+  border-bottom: 1px solid #44475a;
+  max-height: 40%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.mid-feed-articles {
+  min-height: 40%;
+  max-height: 50%;
 }
 
 #ampm {
@@ -258,6 +301,11 @@ h6 {
   font-weight: 400;
   text-transform: uppercase;
 }
+
+/* #time {
+  position: fixed;
+  top: 50%;
+} */
 
 #current-date {
   color: #6272a4;
@@ -283,6 +331,112 @@ h6 {
   margin-top: 20px;
   color: #6272a4;
   text-align: center;
+}
+
+.right-top {
+  color: #6272a4;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  /* white-space: normal; */
+  font-size: 12px;
+  /* line-height: 20px; */
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.issues {
+  color: #f1fa8c;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.issues p {
+  margin-top: 0;
+}
+
+.pull {
+  color: #ff79c6;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.current-tab-issues {
+  text-align: left;
+  /* color: whitesmoke; */
+  position: relative;
+  top: -10px;
+  left: -45px;
+  color: #f1fa8c;
+  visibility: hidden;
+}
+
+.current-tab-pull {
+  text-align: left;
+  /* color: whitesmoke; */
+  position: relative;
+  top: -10px;
+  left: 40px;
+  color: #ff79c6;
+  visibility: hidden;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /* border: 1px solid #ccc;
+  background-color: #f1f1f1; */
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  /* margin: 40px 0px 10px; */
+  font-weight: 100;
+  text-align: center;
+}
+
+/* Style the buttons inside the tab */
+.tab {
+  /* background-color: inherit; */
+  /* float: left; */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 2px 2px 10px 2px; */
+  transition: 0.3s;
+  /* font-size: 12px; */
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+  font-weight: 700;
+}
+
+/* Create an active/current tablink class */
+.tab span.active {
+  display: inline;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  /* padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none; */
+  text-align: left;
+  width: 100%;
+}
+
+.tabcontent li {
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 10px;
+  border-color: #44475a;
+  margin-bottom: 30px;
+}
+
+.comments {
+  font-family: 'Inconsolata', monospace;
+  color: #f8f8f2;
+  font-size: 16px;
+  font-weight: 100;
 }
 
 @media screen and (max-height: 450px) {
