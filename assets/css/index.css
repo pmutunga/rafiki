@@ -1,6 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: #282a36;
+  height: 100%;
+  overflow: hidden;
 }
 
 .sidenav {
@@ -12,6 +18,7 @@ body {
   left: 0;
   background-color: #44475a;
   overflow-x: hidden;
+  overflow: scroll;
   padding-top: 20px;
 }
 
@@ -173,9 +180,15 @@ h6 {
   line-height: 18px;
 }
 
-/* .left-col {
-  width: 25%;
-} */
+.left-col {
+  height: 680px;
+  overflow: scroll;
+}
+
+.git-history {
+  height: 100%;
+  overflow: hidden;
+}
 
 .feed {
   overflow-y: auto;
@@ -238,6 +251,14 @@ h6 {
   overflow: hidden;
   text-overflow: ellipsis;
   color: #6272a4;
+  text-decoration: none;
+  /* height: 150px;
+  overflow-y: auto; */
+}
+
+.feed a:hover {
+  color: #f1fa8c;
+  text-decoration: none;
 }
 
 .mid-feed-image {
@@ -269,12 +290,12 @@ h6 {
   /* overflow-y: scroll; */
   /* border: #8be9fd soild 2px; */
   border-bottom: 1px solid #44475a;
-  max-height: 40%;
+  max-height: 250px;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 1px;
+  width: 0px;
 }
 
 /* Track */
@@ -297,7 +318,7 @@ h6 {
   max-height: 50%;
 }
 
-.history-article:hover {
+.mid-feed:hover {
   color: #f1fa8c;
 }
 
@@ -307,10 +328,10 @@ h6 {
   text-transform: uppercase;
 }
 
-/* #time {
-  position: fixed;
-  top: 50%;
-} */
+#custom {
+  height: 100%;
+  overflow-y: auto;
+}
 
 #current-date {
   color: #6272a4;
@@ -427,6 +448,9 @@ h6 {
   border-top: none; */
   text-align: left;
   width: 100%;
+  overflow: scroll;
+  height: 400px;
+  overflow-x: hidden;
 }
 
 .tabcontent li {
@@ -442,6 +466,11 @@ h6 {
   color: #f8f8f2;
   font-size: 16px;
   font-weight: 100;
+}
+
+.js-history {
+  height: 100%;
+  overflow: hidden;
 }
 
 @media screen and (max-height: 450px) {
