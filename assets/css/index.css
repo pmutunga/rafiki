@@ -183,6 +183,7 @@ h6 {
 .left-col {
   height: 680px;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .git-history {
