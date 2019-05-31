@@ -17,31 +17,35 @@ body {
   top: 0;
   left: 0;
   background-color: #44475a;
-  overflow-x: hidden;
-  overflow: scroll;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  /* overflow: scroll; */
   padding-top: 20px;
+  height: 100%;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 12px;
-  color: #818181;
+  /* color: #818181;  */
   display: block;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: black;
 }
 
 .sidenav-btn {
   border: none;
 }
+
 #settings {
   color: cyan;
 }
 #settings-btn {
   background-color: cyan;
+  color: black;
 }
 
 #gists {
@@ -50,6 +54,7 @@ body {
 
 #gists-btn {
   background-color: lightgreen;
+  color: black;
 }
 
 #stack {
@@ -58,6 +63,7 @@ body {
 
 #stack-btn {
   background-color: lightsalmon;
+  color: black;
 }
 
 #trending {
@@ -66,6 +72,7 @@ body {
 
 #trending-btn {
   background-color: lightpink;
+  color: black;
 }
 
 #scratch {
@@ -74,6 +81,7 @@ body {
 
 #scratch-btn {
   background-color: violet;
+  color: black;
 }
 
 #play {
@@ -86,6 +94,7 @@ body {
 
 #question-btn {
   background-color: rgb(247, 247, 137);
+  color: black;
 }
 
 #initab-logo {
@@ -126,7 +135,7 @@ body {
   background-color: #33ccff;
 }
 
-#discord {
+#reddit {
   background-color: #738adb;
 }
 

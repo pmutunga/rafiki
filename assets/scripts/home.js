@@ -47,3 +47,65 @@ function openCity(evt, tabName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById('defaultOpen').click();
+
+// Social Media share
+
+function fbshare(e) {
+  console.log('clicked facebook');
+  e.preventDefault();
+  var facebookWindow = window.open(
+    'https://www.facebook.com/sharer/sharer.php?u=' + 'www.ipsafari.com',
+    'facebook-popup',
+    'height=350,width=600'
+  );
+  if (facebookWindow.focus) {
+    facebookWindow.focus();
+  }
+  return false;
+}
+
+function linkedinshare(e) {
+  e.preventDefault();
+  var linkedinWindow = window.open(
+    'https://linkedin.com/share?url=' + 'www.ipsafari.com',
+    'twitter-popup',
+    'height=350,width=600'
+  );
+  if (linkedinWindow.focus) {
+    linkedinWindow.focus();
+  }
+  return false;
+}
+
+function twittershare(e) {
+  e.preventDefault();
+  var twitterWindow = window.open(
+    'https://twitter.com/share?url=' + 'www.ipsafari.com',
+    'twitter-popup',
+    'height=350,width=600'
+  );
+  if (twitterWindow.focus) {
+    twitterWindow.focus();
+  }
+  return false;
+}
+
+function redditshare(e) {
+  e.preventDefault();
+  var redditWindow = window.open(
+    'https://www.reddit.com/login/',
+    'reddit-popup',
+    'height=350,width=600'
+  );
+  if (redditWindow.focus) {
+    redditWindow.focus();
+  }
+  return false;
+}
+
+// Social Media click listeners
+
+document.getElementById('facebook').addEventListener('click', fbshare);
+document.getElementById('linkedin').addEventListener('click', linkedinshare);
+document.getElementById('twitter').addEventListener('click', twittershare);
+document.getElementById('reddit').addEventListener('click', redditshare);
