@@ -39,3 +39,11 @@ You can review the site [here](https://pmutunga.github.io/rafiki/);
 * [Theme colors](https://github.com/dracula/dracula-theme)
 
 * W3Schools tabs tutorial. [HoW TO - tabs](https://www.w3schools.com/howto/howto_js_tabs.asp);
+
+## Screenshot
+
+![homepage](assets/images/myInitab.PNG)
+
+## I'm starting Voyage 9!!!
+
+![voyage9](assets/images/voyage9.JPG)
