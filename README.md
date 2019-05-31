@@ -38,4 +38,4 @@ You can review the site [here](https://pmutunga.github.io/rafiki/);
 
 * [Theme colors](https://github.com/dracula/dracula-theme)
 
-* W3Schools tabs tutorial. [Hot TO - tabs](https://www.w3schools.com/howto/howto_js_tabs.asp);
+* W3Schools tabs tutorial. [HoW TO - tabs](https://www.w3schools.com/howto/howto_js_tabs.asp);
